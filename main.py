@@ -59,6 +59,6 @@ if st.button("Analyze"):
     productivity_pred = reg_model.predict(features)[0]
 
     st.subheader("Prediction Result")
-    st.write("**Depression**:", "Yes" if depression_pred else "No")
-    st.write("**Anxiety**:", "Yes" if anxiety_pred else "No")
+    # st.write("**Depression**:", "Yes" if depression_pred else "No")
+    # st.write("**Anxiety**:", "Yes" if anxiety_pred else "No")
     st.write("**Expected Productivity Score**:", round(productivity_pred, 2))
